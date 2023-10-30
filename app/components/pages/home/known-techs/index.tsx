@@ -15,6 +15,7 @@ export const KnownTechs = () => {
               name: "Next.js",
               startDate: "2021-01-01",
             }}
+            key={index}
           />
         ))}
       </div>
