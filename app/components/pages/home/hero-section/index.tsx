@@ -31,11 +31,7 @@ const MOCK_CONTACTS = [
 const MOCK_KNOWN_TECHS = [
   "Next.js",
   "React.js",
-<<<<<<< HEAD
   "Tailwind CSS",
-=======
-  "Tailwind",
->>>>>>> 5bf90410950659a3fb299932da993638fd74d39f
   "TypeScript",
   "JavaScript",
 ];
@@ -49,18 +45,12 @@ export const HeroSection = () => {
           <h2 className="text-4xl font-medium mt-2">Jonatha Botelho</h2>
 
           <p className="text-gray-400 my-6 text-sm sm:text-base">
-<<<<<<< HEAD
-            Sou um Desenvolvedor Front-end Júnior com habilidade técnica e profissional em tecnologias 
-            como Next.js, React.JS, TypeScript, JavaScript. Utilizo bibliotecas React e realizo consumo de API’s públicas 
-            e privadas e possuo conhecimento em estrutura e funcionamento 
-            de Banco de Dados MySQL. Estou sempre aberto a novas oportunidades e desafios.
-=======
-            Olá, meu nome é Jonatha Botelho e sou um desenvolvedor front-end
-            apaixonado por tecnologia. Iniciante nessa nova carreira. Meu
-            objetivo é criar interfaces de usuário bonitas e funcionais,
-            aprender novas tecnologias do momento e utiliza-lás em projetos
-            desafiadores. Estou sempre aberto a novas oportunidades e desafios.
->>>>>>> 5bf90410950659a3fb299932da993638fd74d39f
+            Sou um Desenvolvedor Front-end Júnior com habilidade técnica e
+            profissional em tecnologias como Next.js, React.JS, TypeScript,
+            JavaScript. Utilizo bibliotecas React e realizo consumo de API’s
+            públicas e privadas e possuo conhecimento em estrutura e
+            funcionamento de Banco de Dados MySQL. Estou sempre aberto a novas
+            oportunidades e desafios.
           </p>
 
           <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
