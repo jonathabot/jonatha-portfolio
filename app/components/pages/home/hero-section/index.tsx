@@ -46,8 +46,8 @@ export const HeroSection = () => {
 
           <p className="text-gray-400 my-6 text-sm sm:text-base">
             Sou um Desenvolvedor Front-end Júnior com habilidade técnica e
-            profissional em tecnologias como Next.js, React.JS, TypeScript,
-            JavaScript. Utilizo bibliotecas React e realizo consumo de API’s
+            profissional em tecnologias como Next.js, React.js, TypeScript,
+            JavaScript. Utilizo bibliotecas React, realizo consumo de API’s
             públicas e privadas e possuo conhecimento em estrutura e
             funcionamento de Banco de Dados MySQL. Estou sempre aberto a novas
             oportunidades e desafios.
