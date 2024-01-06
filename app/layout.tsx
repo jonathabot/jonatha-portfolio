@@ -6,6 +6,18 @@ import { ContactForm } from "./components/contact-form";
 import { Footer } from "./components/footer";
 import { BackToTop } from "./components/back-to-top";
 
+export const metadata = {
+  title: {
+    default: "Portfolio | Jonatha",
+    template: "%s | Jonatha",
+  },
+  icons: [
+    {
+      url: "/favicon.svg",
+    },
+  ],
+};
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],

@@ -10,10 +10,10 @@ const NAV_ITEMS = [
     label: "Home",
     href: "/",
   },
-  // {
-  //     label: 'Projetos',
-  //     href: '/projects'
-  // }
+  {
+    label: "Projetos",
+    href: "/projects",
+  },
 ];
 
 export default function Header() {
