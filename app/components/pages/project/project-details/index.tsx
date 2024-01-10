@@ -65,7 +65,7 @@ export const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 
         {project?.liveProjectUrl && (
           <a href={project.liveProjectUrl} target="_blank">
-            <Button className="min-w-[180px]">
+            <Button className="min-w-[180px] ">
               <FiGlobe size={20} />
               Projeto Online
             </Button>
