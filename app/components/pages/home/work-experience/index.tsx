@@ -15,8 +15,7 @@ export const WorkExperience = ({ experiences }: WorkExperienceProps) => {
           title="Experiência Profissional"
         />
         <p className="text-gray-400 mt-6">
-          Estou sempre aberto a novos desafios e projetos emocionantes. Vamos
-          trabalhar juntos para criar soluções incriveis para sua empresa!
+          O que eu fiz e faço profissionalmente até o momento!
         </p>
       </div>
 
