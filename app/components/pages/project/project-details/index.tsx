@@ -1,15 +1,15 @@
 "use client";
 
 import { Button } from "@/app/components/button";
+import { Link } from "@/app/components/link";
 import { SectionTitle } from "@/app/components/section-title";
 import { TechBadge } from "@/app/components/tech-badge";
-import { TbBrandGithub } from "react-icons/tb";
-import { FiGlobe } from "react-icons/fi";
-import { Link } from "@/app/components/link";
-import { HiArrowCircleRight, HiArrowNarrowLeft } from "react-icons/hi";
+import { HiArrowNarrowLeft } from "react-icons/hi";
+import { motion } from "framer-motion";
 import { Project } from "@/app/types/projects";
 import { RichText } from "@/app/components/rich-text";
-import { motion } from "framer-motion";
+import { TbBrandGithub } from "react-icons/tb";
+import { FiGlobe } from "react-icons/fi";
 import { fadeUpAnimation, techBadgeAnimation } from "@/app/lib/animation";
 
 type ProjectDetailsProps = {
@@ -22,7 +22,9 @@ export const ProjectDetails = ({ project }: ProjectDetailsProps) => {
       <motion.div
         className="absolute inset-0 z-[-1]"
         style={{
-          background: `url(/images/hero-bg.png) no-repeat center/cover, url(${project.pageThumbnail.url}) no-repeat center/cover`,
+          background: project.pageThumbnail
+            ? `url(/images/hero-bg.png) no-repeat center/cover, url(${project.pageThumbnail.url}) no-repeat center/cover`
+            : `url(/images/hero-bg.png) no-repeat center/cover`,
         }}
         initial={{ opacity: 0, scale: 1.3 }}
         animate={{ opacity: 1, scale: 1 }}

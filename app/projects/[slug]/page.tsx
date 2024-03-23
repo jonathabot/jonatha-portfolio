@@ -40,6 +40,7 @@ const getProjectDetails = async (slug: string): Promise<ProjectPageData> => {
     }
   }
   `;
+
   return fetchHygraphQuery(
     query,
     1 // 1 day
