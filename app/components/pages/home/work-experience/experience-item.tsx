@@ -33,9 +33,14 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
 
   const end = endDate ? new Date(endDate) : new Date();
 
-  const months = differenceInMonths(end, startDate);
-  const years = differenceInYears(end, startDate);
-  const monthsRemaining = months % 12;
+  let months = differenceInMonths(end, startDate) + 1;
+  let years = Math.floor(months / 12);
+  let monthsRemaining = months % 12;
+
+  if (monthsRemaining === 12) {
+    years += 1;
+    monthsRemaining = 0;
+  }
 
   const formattedDuration =
     years > 0
@@ -44,7 +49,7 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
             ? ` e ${monthsRemaining} mes${monthsRemaining > 1 ? "es" : ""}`
             : ""
         }`
-      : `${months} mes${months > 1 ? "es" : ""}`;
+      : `${monthsRemaining} mes${monthsRemaining > 1 ? "es" : ""}`;
 
   return (
     <motion.div
@@ -79,9 +84,11 @@ export const ExperienceItem = ({ experience }: ExperienceItemProps) => {
           <span className="text-gray-500">
             {formattedStartDate} - {formattedEndDate} • ({formattedDuration})
           </span>
-          <div className="text-gray-400">
-            <RichText content={description.raw} />
-          </div>
+          {description.raw ? (
+            <div className="text-gray-400">
+              <RichText content={description.raw} />
+            </div>
+          ) : null}
 
           <p className="text-gray-400 text-sm mb-3 mt-6 font-semibold">
             Competências
