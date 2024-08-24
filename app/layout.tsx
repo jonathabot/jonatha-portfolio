@@ -9,8 +9,8 @@ import { Toaster } from "./components/toaster";
 
 export const metadata = {
   title: {
-    default: "Portfolio | Jonatha",
-    template: "%s | Jonatha",
+    default: "Jonatha Botelho | Portfólio Profissional",
+    template: "Jonatha Botelho | %s",
   },
   icons: [
     {
