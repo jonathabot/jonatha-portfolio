@@ -6,14 +6,12 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      sans: ["var(--font-inter)", "sans-serif"],
-    },
     extend: {
       backgroundImage: {
         "hero-image": "url('/images/hero-bg.png')",
       },
       fontFamily: {
+        sans: ["var(--font-inter)", "sans-serif"],
         mono: ["var(--font-plex-mono)", "monospace"],
       },
       boxShadow: {
